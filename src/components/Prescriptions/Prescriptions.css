@@ -1,0 +1,350 @@
+.prescriptions-page {
+  padding: 0;
+}
+
+.pres-page-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+/* Search */
+.pres-search-wrap {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.pres-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #475569;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.pres-search-input {
+  width: 100%;
+  padding: 12px 40px 12px 42px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.pres-search-input::placeholder {
+  color: #475569;
+}
+
+.pres-search-input:focus {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.pres-search-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
+  line-height: 1;
+}
+
+.pres-search-clear:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #e2e8f0;
+}
+
+.pres-page-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Tabs */
+.pres-tabs {
+  display: flex;
+  gap: 4px;
+  background: rgba(255,255,255,0.04);
+  padding: 4px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.pres-tab {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.pres-tab.active {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+}
+
+.pres-tab:hover:not(.active) {
+  color: #94a3b8;
+}
+
+/* Report download button */
+.report-dl-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(59,130,246,0.12);
+  border: 1px solid rgba(59,130,246,0.3);
+  color: #60a5fa;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.report-dl-btn:hover {
+  background: rgba(59,130,246,0.2);
+}
+
+.pres-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #64748b;
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  border: 1px dashed rgba(255,255,255,0.1);
+}
+
+.pres-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pres-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.pres-card:hover {
+  border-color: rgba(255,255,255,0.15);
+}
+
+.pres-card.open {
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.pres-card-header {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.pres-card-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+}
+
+.pres-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.pres-card-left h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pres-sub {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.pres-card-right {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.pres-date {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pres-hospital {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.pres-chevron {
+  font-size: 12px;
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.pres-card-body {
+  padding: 0 20px 20px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.pres-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+.pres-detail-grid label {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.pres-detail-grid p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.pres-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.pres-status.completed {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.pres-status.pending {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+
+/* Medicines Table */
+.pres-med-section {
+  margin-top: 16px;
+}
+
+.pres-med-section > label {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.pres-med-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pres-med-table th {
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  background: rgba(255,255,255,0.04);
+}
+
+.pres-med-table td {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #cbd5e1;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.pres-med-table td:nth-child(2) {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* Doctor Notes */
+.pres-notes-box {
+  margin-top: 16px;
+  background: rgba(59,130,246,0.06);
+  border: 1px solid rgba(59,130,246,0.15);
+  border-left: 3px solid #3b82f6;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+}
+
+.pres-notes-box > label {
+  display: block;
+  font-size: 10px;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.pres-notes-box > p {
+  margin: 0;
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.5;
+}

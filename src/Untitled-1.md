@@ -1,0 +1,40 @@
+```
+└── 📁src
+    └── 📁assets
+        ├── react.svg
+    └── 📁components
+        └── 📁Allergies
+            ├── Allergies.css
+            ├── Allergies.jsx
+        └── 📁Auth
+            ├── Auth.css
+            ├── Auth.jsx
+        └── 📁Dashboard
+            ├── Dashboard.css
+            ├── Dashboard.jsx
+            ├── HealthCard.css
+            ├── HealthCard.jsx
+            ├── HealthChart.css
+            ├── HealthChart.jsx
+            ├── VisitTimeline.jsx
+        └── 📁Hospitals
+            ├── Hospitals.css
+            ├── Hospitals.jsx
+        └── 📁Layout
+            ├── Layout.css
+            ├── Layout.jsx
+        └── 📁Profile
+            ├── Profile.css
+            ├── Profile.jsx
+        └── 📁Reports
+            ├── Reports.css
+            ├── Reports.jsx
+        ├── Sidebar.css
+        ├── Sidebar.jsx
+    └── 📁styles
+        ├── globals.css
+    ├── App.css
+    ├── App.jsx
+    ├── index.css
+    └── main.jsx
+```

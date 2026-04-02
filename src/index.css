@@ -1,0 +1,68 @@
+/* RESET + BASE LAYOUT */
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* LINKS */
+
+a {
+  font-weight: 500;
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--accent-blue-dark);
+}
+
+/* BUTTON BASE STYLE */
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  padding: 0.6em 1.2em;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-blue);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-blue-light);
+}
+
+/* HEADINGS */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* UTILITY */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
